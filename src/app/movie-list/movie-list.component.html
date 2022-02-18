@@ -1,0 +1,21 @@
+<!-- <app-header [title]="name"></app-header> -->
+<app-header></app-header>
+<section class="moviedetails">
+<div class="left">
+  <div class="img">
+    <img [src]="imgURL" />
+  </div>
+    <app-movie-details [selectedMovie]="details"></app-movie-details>
+</div>
+<div class="right">
+    <ul class="movies">
+        <li *ngFor="let movie of movies" [class.selected]="movie === selectedMovie"
+        (click)="onSelect(movie);">
+          {{movie.name}}
+        </li>
+      </ul>
+</div>
+</section>
+
+
+

@@ -1,0 +1,89 @@
+section .right {
+  min-height: 98vh;
+  background-color: #e6e6e6;
+}
+.movies {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    background: #f8f9fa;
+  }
+
+  .movies li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    border-radius: 4px;
+  }
+
+  .movies li:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+  }
+
+  .movies li.selected {
+    background-color: black;
+    color: white;
+  }
+
+  .movies li.selected:hover {
+    background-color: #505050;
+    color: white;
+  }
+
+  .movies li.selected:active {
+    background-color: black;
+    color: white;
+  }
+
+  
+
+  .movie-details {
+    text-align: center;
+    width: 60em;
+    margin-top: 20px;
+  }
+
+  .movie-details h2 {
+    margin-top: 16px;
+    font-size: 30px;
+  }
+
+  
+  .movie-details span {
+    font-weight: bold;
+  }
+
+  .movie-details .direct {
+    font-size: 16px;
+
+  }
+  .moviedetails {
+    display: flex;
+    .left{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      .img {
+        display:flex;
+        justify-content: center;
+      }
+      app-movie-details {
+        text-align: center;
+      }
+        }
+        .right {
+          width: 50%;
+       
+        }
+  }
+
+  img{
+    max-width: 100%;
+    height: 350px;
+    border-radius: 15px;
+
+  }
